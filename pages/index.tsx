@@ -1,5 +1,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
+// import BGImg from '../assets/images/bg.jpg'
+// import BGImg from '../assets/macbook01.jpg'
 
 import styles from "../styles/Home.module.css";
 import { fetchQuizQuestions } from "../src/API";
@@ -73,6 +75,7 @@ const Home: React.FC = () => {
 
   return (
     <>
+      {/* <img src={BGImg} /> */}
       <GlobalStyle />
       <Wrapper>
         <h1>REACT QUIZ</h1>
@@ -94,13 +97,13 @@ const Home: React.FC = () => {
           />
         )}
         {!gameOver &&
-        !loading &&
-        userAnswers.length === number + 1 &&
-        number !== TOTAL_QUESTIONS - 1 ? (
-          <button className="next" onClick={nextQuestion}>
-            Next Question
-          </button>
-        ) : null}
+          !loading &&
+          userAnswers.length === number + 1 &&
+          number !== TOTAL_QUESTIONS - 1 ? (
+            <button className="next" onClick={nextQuestion}>
+              Next Question
+            </button>
+          ) : null}
       </Wrapper>
     </>
   );
