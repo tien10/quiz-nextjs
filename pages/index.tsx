@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import BGImg from '../assets/images/bg.jpg'
 // import BGImg from '../assets/macbook01.jpg'
 
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 import { fetchQuizQuestions } from "../src/API";
 // Components
 import QuestionCard from "../src/components/QuestionCard";
